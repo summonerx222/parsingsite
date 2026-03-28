@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Парсинг каталогов и подготовка Excel — портфолио</title>
+  <meta name="description" content="Портфолио-проект: парсинг каталогов товаров, очистка данных и подготовка Excel-файлов для бизнеса." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow glow-left"></div>
+  <div class="page-glow glow-right"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="brand">Portfolio Case</a>
+      <nav>
+        <a href="#about">О подходе</a>
+        <a href="#process">Процесс</a>
+        <a href="#result">Результат</a>
+        <a href="#files">Файлы</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">ПОРТФОЛИО · ПАРСИНГ + EXCEL</p>
+          <h1>Парсинг товарных каталогов с очисткой данных и подготовкой Excel для бизнеса</h1>
+          <p class="lead">
+            Это пример того, как из каталога на сайте получается не просто выгрузка, а аккуратный рабочий файл:
+            с нормальными колонками, очищенными значениями, ссылками, характеристиками и логичной структурой для дальнейшей работы.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#files">Посмотреть файлы</a>
+            <a class="btn btn-secondary" href="#process">Как устроена работа</a>
+          </div>
+          <ul class="hero-points">
+            <li>Сбор каталога с карточек и страниц категорий</li>
+            <li>Очистка, нормализация и устранение мусора</li>
+            <li>Подготовка файлов “как было” и “как стало”</li>
+          </ul>
+        </div>
+
+        <div class="hero-card card">
+          <div class="hero-card-top">
+            <span class="chip">case study</span>
+            <span class="chip chip-soft">Excel ready</span>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-box">
+              <span class="stat-label">Источник</span>
+              <strong>каталог товаров</strong>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">На выходе</span>
+              <strong>clean Excel</strong>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Формат</span>
+              <strong>CSV + XLSX</strong>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Польза</span>
+              <strong>готово к работе</strong>
+            </div>
+          </div>
+          <div class="mini-window">
+            <div class="mini-window-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="code-lines">
+              <div><span>name</span><span>price</span><span>category</span></div>
+              <div><span>link</span><span>attributes</span><span>status</span></div>
+              <div><span>cleaned</span><span>normalized</span><span>ready</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">О ПОДХОДЕ</p>
+          <h2>Подход не в том, чтобы “как-нибудь вытащить сайт”, а в том, чтобы получить полезный результат</h2>
+          <p>
+            В таких задачах цель — не просто собрать HTML-страницу в таблицу. Важно разобрать структуру каталога,
+            понять, какие поля реально важны бизнесу, и привести результат к виду, с которым можно работать дальше:
+            фильтровать, загружать в систему, проверять, анализировать и использовать повторно.
+          </p>
+        </div>
+        <div class="cards-3">
+          <article class="card info-card">
+            <h3>Сначала разбирается источник</h3>
+            <p>
+              Смотрю, как устроен каталог: категории, карточки, пагинация, вложенные страницы, характеристики,
+              скрытые закономерности в верстке, ссылки, дубли и нестабильные элементы.
+            </p>
+          </article>
+          <article class="card info-card">
+            <h3>Потом продумывается маршрут</h3>
+            <p>
+              Выбирается безопасный и устойчивый способ сбора: прямой HTML-парсинг, обход категорий, работа с карточками,
+              разбор таблиц, поиск альтернативных селекторов и запасных сценариев.
+            </p>
+          </article>
+          <article class="card info-card">
+            <h3>На выходе — пригодные данные</h3>
+            <p>
+              Данные очищаются, приводятся к единому виду, убирается мусор, выравниваются названия и цены,
+              а сами результаты отдаются в понятном Excel-формате.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="process">
+      <div class="container">
+        <div class="section-heading narrow">
+          <p class="eyebrow">КАК ИДЕТ РАБОТА</p>
+          <h2>Пошаговый процесс выполнения таких задач</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item card">
+            <span class="step">01</span>
+            <h3>Анализ сайта</h3>
+            <p>Проверяется структура сайта, карточек, категорий, подкатегорий и переходов. Сразу смотрится, что можно взять напрямую, а что придется собирать в обход.</p>
+          </article>
+          <article class="timeline-item card">
+            <span class="step">02</span>
+            <h3>Проверка путей получения данных</h3>
+            <p>Если данные нельзя просто снять с одной страницы, ищутся обходные варианты: отдельные карточки, скрытые блоки, повторные запросы, альтернативные селекторы, вложенные ссылки.</p>
+          </article>
+          <article class="timeline-item card">
+            <span class="step">03</span>
+            <h3>Сбор сырого массива</h3>
+            <p>Сначала собирается максимально полный сырой слой: названия, цены, ссылки, категории, описания и характеристики в том виде, в каком они реально есть на сайте.</p>
+          </article>
+          <article class="timeline-item card">
+            <span class="step">04</span>
+            <h3>Очистка и нормализация</h3>
+            <p>Убираются дубли, мусор, лишние пробелы, лишние символы и неунифицированные значения. Цены переводятся в нормальный формат, характеристики раскладываются по колонкам.</p>
+          </article>
+          <article class="timeline-item card">
+            <span class="step">05</span>
+            <h3>Подготовка удобного результата</h3>
+            <p>Вместо просто выгрузки формируются понятные файлы: “как было” и “как стало”, а также аккуратный Excel с фильтрами и структурой, пригодной для бизнеса.</p>
+          </article>
+          <article class="timeline-item card">
+            <span class="step">06</span>
+            <h3>Проверка на пользу</h3>
+            <p>Финально проверяется не только корректность парсинга, но и практическая ценность: можно ли по файлу искать, фильтровать, сортировать, переносить данные дальше и работать с ними без ручной боли.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="result">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ЧТО ПОЛУЧАЕТСЯ В ИТОГЕ</p>
+          <h2>Результат, который можно показать заказчику и сразу использовать в работе</h2>
+        </div>
+
+        <div class="result-grid">
+          <article class="card result-card accent-1">
+            <h3>01 · Raw</h3>
+            <p class="result-title">Файл “как было”</p>
+            <p>Сырые данные после сбора: все исходные значения, как они лежали на сайте, без прикрас. Нужен для прозрачности и контроля.</p>
+          </article>
+          <article class="card result-card accent-2">
+            <h3>02 · Clean</h3>
+            <p class="result-title">Файл “как стало”</p>
+            <p>Чистая таблица с нормальными колонками, единым форматом цен, структурированными характеристиками и готовыми ссылками.</p>
+          </article>
+          <article class="card result-card accent-3">
+            <h3>03 · Excel</h3>
+            <p class="result-title">Рабочий итоговый файл</p>
+            <p>Excel с листами, фильтрами и понятной структурой, который можно показывать, передавать и использовать как полноценный рабочий результат.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="files">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ФАЙЛЫ КЕЙСА</p>
+          <h2>Пример итоговых материалов</h2>
+          <p>Ниже можно скачать демонстрационные файлы проекта и посмотреть, как выглядит результат на практике.</p>
+        </div>
+
+        <div class="downloads">
+          <a class="download-card card" href="sample_raw_catalog.csv" download>
+            <span class="download-type">CSV</span>
+            <strong>sample_raw_catalog.csv</strong>
+            <p>Сырой результат после первичного сбора</p>
+          </a>
+          <a class="download-card card" href="sample_clean_catalog.csv" download>
+            <span class="download-type">CSV</span>
+            <strong>sample_clean_catalog.csv</strong>
+            <p>Очищенный и нормализованный вариант</p>
+          </a>
+          <a class="download-card card" href="sample_portfolio_demo.xlsx" download>
+            <span class="download-type">XLSX</span>
+            <strong>sample_portfolio_demo.xlsx</strong>
+            <p>Excel-файл с итоговой демонстрацией</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta card">
+          <div>
+            <p class="eyebrow">ЧТО ЭТО ПОКАЗЫВАЕТ</p>
+            <h2>Этот кейс демонстрирует не просто парсинг, а умение доводить данные до рабочего состояния</h2>
+            <p>
+              Такой подход хорошо подходит для каталогов, интернет-магазинов, списков услуг, карточек товаров,
+              выгрузок для Excel, CRM, BI и ручной последующей обработки.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="#top">Наверх</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Одностраничный портфолио-кейс: парсинг + Excel</p>
+      <button class="theme-toggle" id="themeToggle" type="button">Сменить свечение</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
